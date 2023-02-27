@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  background-color: aqua;
+}
+
+.candies {
+  height: 100%;
+  width: 95vw;
+}
+
+.receipt {
+  height: 500px;
+  width: 400px;
+  background-color: gray;
+}
+
+.arrowicon {
+  height: 100%;
+  width: 2vw;
+}
+
+.arrow {
+  font-size: 30px;
+  text-decoration: none;
+}

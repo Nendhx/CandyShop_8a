@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.topg {
+  height: 20vh;
+  width: 100vw;
+  background-color: aqua;
+}
+
+.lowerg {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+}
+
+.topratedg {
+  height: 80vh;
+  width: 30vw;
+  background-color: blue;
+}
+
+.storeg {
+  height: 80vh;
+  width: 70vw;
+  background-color: lightcoral;
+}
+
+.storeimage {
+  height: 79.5vh;
+  width: 70vw;
+}
+
+a {
+  position: fixed;
+  right: 600px;
+  bottom: 200px;
+  height: 70px;
+  width: 200px;
+  color: cyan;
+  text-shadow: -7px 7px 4px black;
+  text-decoration: none;
+  font-size: 30px;
+  background-color: transparent;
+  border: 0;
+}
