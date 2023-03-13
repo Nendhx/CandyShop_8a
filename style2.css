@@ -1,16 +1,51 @@
 * {
+  font-family: 'Sono', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 body {
   display: flex;
-  background-color: aqua;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+p{
+  color: #0bb;
+}
+
+.topg {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  height: 300px;
+  width: 200px;
+  border: #0bb 2px solid;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+.header{
+  height: 70%;
+  width: 90%;
+  border-bottom: #0bb 2px solid;
+  display: flex;
 }
 
 .candies {
   height: 100%;
   width: 95vw;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .receipt {

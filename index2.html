@@ -3,27 +3,52 @@
   <head>
     <title>Store</title>
     <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Sono:wght@600&display=swap');
+    </style>
   </head>
   <body>
-    <div class="arrowicon">
-      <a href="index1.html"><p class="arrow">←</p></a>
+    <div class="topg">
+      <div class="header">
+        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+      </div>
     </div>
     <div class="candies">
-      <img class="candyimg" src="https://cloudfront-us-east-1.images.arcpublishing.com/advancelocal/VUX5MLBCGVAD3HIIDOOW3NZZQM.jpeg" alt="">
-      <p>SNICKERS - 1700T <input id="SnickersId" type="number" /></p>
-      <br />
-      <p>MILKY WAY - 1800T <input id="MilkyWayId" type="number" /></p>
-      <br />
-      <p>MARS - 1900T <input id="MarsId" type="number" /></p>
-      <br />
-      <p>TWIXX - 2000T <input id="TwixxsId" type="number" /></p>
-      <br />
-      <button onclick="Show()"><p>BUY</p></button><br />
-      <p>Your Receipt:</p>
-      <br />
-      <div class="receipt">
-        <h1>TOTAL</h1>
-        <h1 id="result"></h1>
+      <div class="container">
+        <img class="candyimg" src="https://cloudfront-us-east-1.images.arcpublishing.com/advancelocal/VUX5MLBCGVAD3HIIDOOW3NZZQM.jpeg" alt="">
+        <p>SNICKERS</p>
+        <h2>2$</h2>
+        <input id="SnickersId" type="number" />
+        <button onclick="Show()"><p>BUY</p></button>
+      </div>
+      <div class="container">
+        <img class="candyimg" src="https://m.media-amazon.com/images/I/41OToD3wuCL.jpg" alt="">
+        <p>MILKY WAY</p>
+        <h2>2$</h2>
+        <input id="MilkyWayId" type="number" />
+        <button onclick="Show()"><p>BUY</p></button>
+      </div>
+      <div class="container">
+        <img class="candyimg" src="https://m.media-amazon.com/images/I/71NrROgheSL.jpg" alt="">
+        <p>MARS</p>
+        <h2>2$</h2>
+        <input id="MarsId" type="number" />
+        <button onclick="Show()"><p>BUY</p></button>
+      </div>
+      <div class="container">
+        <img class="candyimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl-FuOinYwm0w0EHp6_L6a13y4HvL-xT4dZA&usqp=CAU" alt="">
+        <p>TWIXX</p>
+        <h2>2$</h2>
+        <input id="TwixxsId" type="number" />
+        <button onclick="Show()"><p>BUY</p></button>
+      </div>
+      <div class="container">
+        <img class="candyimg" src="https://shop.hersheys.com/dw/image/v2/BCVS_PRD/on/demandware.static/-/Sites-master-us/default/dw19510bb2/images/hi-res/hsy-160545_1.png?sw=700&sh=700&sm=fit" alt="">
+        <p>KITKAT</p>
+        <h2>2$</h2>
+        <input id="KitkatsId" type="number" />
+        <button onclick="Show()"><p>BUY</p></button>
       </div>
     </div>
     <script src="./script2.js"></script>
