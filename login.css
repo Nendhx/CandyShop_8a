@@ -1,0 +1,102 @@
+*{
+    font-family: 'Sono', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    background-color: #333;
+    height: 200px;
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: solid #444 1px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+p{
+    color: #bbb;
+}
+
+button{
+    height: 30px;
+    color: white;
+    background-color: #0a5;
+    border: solid grey 1px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #083;
+}
+
+input{
+    height: 30px;
+    background-color: black;
+    border: solid #444 1px;
+    border-radius: 5px;
+    color: white;
+}
+
+.signup{
+    background-color: #333;
+    height: 270px;
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: solid #444 1px;
+    border-radius: 10px;
+}
+
+.login1{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 270px;
+    left: 770px;
+    color: white;
+    background-color: #333;
+    border: solid #444 1px;
+    border-radius: 5px;
+}
+
+.signup1{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 270px;
+    right: 770px;
+    color: white;
+    background-color: #333;
+    border: solid #444 1px;
+    border-radius: 5px;
+}
