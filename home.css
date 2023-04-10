@@ -4,6 +4,13 @@
   padding: 0;
 }
 
+body {
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+}
+
 .topg {
   height: 20vh;
   width: 100vw;
@@ -45,6 +52,11 @@ i{
   width: 70vw;
 }
 
+h1{
+  font-size: 75px;
+  color: white;
+}
+
 a {
   position: fixed;
   right: 600px;
@@ -58,3 +70,4 @@ a {
   background-color: transparent;
   border: 0;
 }
+
