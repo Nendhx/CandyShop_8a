@@ -12,7 +12,7 @@ body {
 }
 
 .topg {
-  height: 20vh;
+  height: 120px;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -53,14 +53,12 @@ i{
 }
 
 h1{
-  font-size: 75px;
+  font-size: 50px;
   color: white;
 }
 
 a {
-  position: fixed;
-  right: 600px;
-  bottom: 200px;
+  position:absolute;
   height: 70px;
   width: 200px;
   color: cyan;

@@ -16,7 +16,7 @@ p{
 }
 
 .topg {
-  height: 20vh;
+  height: 120px;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -42,26 +42,12 @@ p{
 }
 
 .candies {
-  height: 100%;
-  width: 95vw;
+  height: auto;
+  width: 90%;
   display: flex;
-  justify-content: space-evenly;
-}
-
-.receipt {
-  height: 500px;
-  width: 400px;
-  background-color: gray;
-}
-
-.arrowicon {
-  height: 100%;
-  width: 2vw;
-}
-
-.arrow {
-  font-size: 30px;
-  text-decoration: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .candyimg{
@@ -70,7 +56,7 @@ p{
 }
 
 h1{
-  font-size: 75px;
+  font-size: 50px;
   color: white;
 }
 
