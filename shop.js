@@ -26,19 +26,33 @@ const products = [
   },
 ];
 
-function Add(pname) {
+function Add(pname){
+  let s = "";
   for(let i = 0; i < products.length; i++){
-    if(products[i].name === pname) products[i].quantity++;
+    if(products[i].name === pname){
+      products[i].quantity++;
+    }
+    if(products[i].quantity > 0){
+      s += '<li>' + products[i].name + "-" + products[i].quantity + '</li>';
+    }
   }
+  document.getElementById("cart").innerHTML = s;
 }
 
-function Reduce(pname) {
+function Reduce(pname){
+  let s = "";
   for(let i = 0; i < products.length; i++){
-    if(products[i].name === pname && products[i].quantity > 0) products[i].quantity--;
+    if(products[i].name === pname && products[i].quantity > 0){
+      products[i].quantity--;
+    }
+    if(products[i].quantity > 0){
+      s += products[i].name + "-" + products[i].quantity + " ";
+    }
   }
+  document.getElementById("cart").innerHTML = s;
 }
 
-function Purchase() {
+function Purchase(){
   let total = 0;
   for (let i = 0; i < products.length; i++) {
     total += products[i].price * products[i].quantity;
