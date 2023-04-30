@@ -23,18 +23,12 @@ function signup(){
     let cpass = document.getElementById("cPassword").value;
     if(password == cpass){
         if(password.length >= 8){ 
-            if(password !== password.toLowerCase()){
-                let newUser = {
-                    user: username,
-                    pass: password
-                }
-                users.push(newUser);
-                alert("Succesfully signed up");
+            let newUser = {
+                user: username,
+                pass: password
             }
-            else{
-                alert("Must contain atleast one upper case letter");
-                return;
-            }
+            users.push(newUser);
+            alert("Succesfully signed up");
         }
         else{
             alert("Must contain 8 or above characters");

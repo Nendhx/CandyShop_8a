@@ -129,6 +129,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    text-shadow: 0 0 15px aqua;
+}
+
 .header{
     height: 70%;
     width: 90%;

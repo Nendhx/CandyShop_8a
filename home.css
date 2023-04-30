@@ -72,10 +72,8 @@ h2{
   color: white;
 }
 
-.lol2{
-  font-size: 50px;
-  color: white;
-  text-shadow: 0px 0px 10px aqua, 0px 0px 15px aqua, 0px 0px 20px aqua, 0px 0px 25px aqua;
+a:hover{
+  text-shadow: 0 0 15px aqua;
 }
 
 .lol {
