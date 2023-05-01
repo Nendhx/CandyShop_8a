@@ -33,7 +33,7 @@ function Add(pname){
       products[i].quantity++;
     }
     if(products[i].quantity > 0){
-      s += '<li>' + products[i].name + "-" + products[i].quantity + '</li>';
+      s += `<li> ${products[i].name} - ${products[i].quantity} <button class="productButton" onclick="Remove('${products[i].name}')">×</button> </li>`
     }
   }
   document.getElementById("cart").innerHTML = s;
@@ -46,7 +46,7 @@ function Reduce(pname){
       products[i].quantity--;
     }
     if(products[i].quantity > 0){
-      s += products[i].name + "-" + products[i].quantity + " ";
+      s += `<li> ${products[i].name} - ${products[i].quantity} <button class="productButton" onclick="Remove('${products[i].name}')">×</button> </li>`
     }
   }
   document.getElementById("cart").innerHTML = s;
@@ -58,4 +58,17 @@ function Purchase(){
     total += products[i].price * products[i].quantity;
   }
   document.getElementById("total").innerHTML = total;
+}
+
+function Remove(pname){
+  let s = "";
+  for(let i = 0; i < products.length; i++){
+    if(products[i].name === pname){
+      products[i].quantity = 0;
+    }
+    if(products[i].quantity > 0){
+      s += `<li> ${products[i].name} - ${products[i].quantity} <button class="productButton" onclick="Remove('${products[i].name}')">×</button> </li>`
+    }
+  }
+  document.getElementById("cart").innerHTML = s;
 }
