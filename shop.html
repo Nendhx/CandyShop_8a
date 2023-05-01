@@ -11,7 +11,7 @@
   <body>
     <div class="topg">
       <div class="header">
-        <a href="home.html"><h1>CANDY SHOP</h1></a>
+        <a class="candyshop" href="home.html"><h1 class="candy">CANDY</h1><h1 class="shop">SHOP</h1></a>
         <a href="sign.html"><h2>Login or Signup</h2></a>
       </div>
     </div>
@@ -19,14 +19,17 @@
       <div class="dropdown">
         <p class="sc">Shopping Cart</p>
         <div class="userbasket">
-          <div id="cart"></div>
+          <div id="cart">
+            <li>There is Nothing in the Cart</li>
+            <li>Go Checkout Our Candy Shop</li>
+            <li><---</li>
+          </div>
           <div class="purchase">
             <p id="total">0</p>
             <button class="purchaseButton" onclick="Purchase()">purchase</button>
           </div>
         </div>
       </div>
-      
     </div>
     <div class="candies">
       <div class="container">

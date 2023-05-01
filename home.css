@@ -25,10 +25,25 @@ i{
   font-size: 50px;
 }
 
+.candy{
+  text-shadow: 0 0 20px #55c2da;
+}
+
+.shop{
+  text-shadow: 0 0 20px #FF10F0;
+}
+
+.candyshop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .header{
   height: 70%;
   width: 90%;
-  border-bottom: #0bb 2px solid;
+  border-bottom: #2272FF 2px solid;
   display: flex;
 }
 
@@ -73,7 +88,7 @@ h2{
 }
 
 a:hover{
-  text-shadow: 0 0 15px aqua;
+  text-shadow: 0 0 15px #2272FF;
 }
 
 .lol {
@@ -88,9 +103,9 @@ a:hover{
 }
 
 .header{
-  height: 70%;
+  height: 90%;
   width: 90%;
-  border-bottom: #0bb 2px solid;
+  border-bottom: #2272FF 2px solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,4 +117,32 @@ a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.candyshop h1{
+  transform: rotate(-10deg);
+}
+
+.background{
+  width: auto;
+  top: -107px;
+  left: -201px;
+  z-index: -1;
+  position: fixed;
+  opacity: 0.2;
+  text-shadow: 0 0 20px #FF10F0;
+  transform: rotate(-25deg);
+  white-space: nowrap;
+}
+
+.background1{
+  width: auto;
+  top: -100px;
+  left: 350px;
+  z-index: -1;
+  position: fixed;
+  opacity: 0.2;
+  text-shadow: 0 0 20px #FF10F0;
+  transform: rotate(-25deg);
+  white-space: nowrap;
 }

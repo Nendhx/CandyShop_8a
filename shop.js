@@ -33,8 +33,12 @@ function Add(pname){
       products[i].quantity++;
     }
     if(products[i].quantity > 0){
-      s += `<li> ${products[i].name} - ${products[i].quantity} <button class="productButton" onclick="Remove('${products[i].name}')">×</button> </li>`
+      s += `<li> ${products[i].name.toUpperCase()} - ${products[i].quantity} <button class="productButton" onclick="Remove('${products[i].name}')">×</button> </li>`
     }
+  }
+  if(s == ""){
+    document.getElementById("cart").innerHTML = `<li>There is Nothing in the Cart</li><li>Go Checkout Our Candy Shop <---</li>`;
+    return;
   }
   document.getElementById("cart").innerHTML = s;
 }
@@ -46,7 +50,7 @@ function Reduce(pname){
       products[i].quantity--;
     }
     if(products[i].quantity > 0){
-      s += `<li> ${products[i].name} - ${products[i].quantity} <button class="productButton" onclick="Remove('${products[i].name}')">×</button> </li>`
+      s += `<li> ${products[i].name.toUpperCase()} - ${products[i].quantity} <button class="productButton" onclick="Remove('${products[i].name}')">×</button> </li>`
     }
   }
   document.getElementById("cart").innerHTML = s;
@@ -67,8 +71,12 @@ function Remove(pname){
       products[i].quantity = 0;
     }
     if(products[i].quantity > 0){
-      s += `<li> ${products[i].name} - ${products[i].quantity} <button class="productButton" onclick="Remove('${products[i].name}')">×</button> </li>`
+      s += `<li> ${products[i].name.toUpperCase()} - ${products[i].quantity} <button class="productButton" onclick="Remove('${products[i].name}')">×</button> </li>`
     }
+  }
+  if(s == ""){
+    document.getElementById("cart").innerHTML = `<li>There is Nothing in the Cart</li><li>Go Checkout Our Candy Shop</li><li> <---</li>`;
+    return;
   }
   document.getElementById("cart").innerHTML = s;
 }
